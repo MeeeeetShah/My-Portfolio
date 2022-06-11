@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="home.html"> <i class="fas fa-home"></i> <span>Home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>About</span> </a>
+    <a href="Projects.html"> <i class="fas fa-briefcase"></i> <span>Projects</span> </a>
+    <a href="blogs.html"> <i class="fas fa-blog"></i> <span>Blogs</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>Contact</span> </a>
+    <img src="images/moon.png" id="icon">
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio">
+
+    <h1 class="heading"> <span>my</span> work </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/img-1.png" alt="Live Clock">
+            <div class="content">
+                <h3>project 01</h3>
+                <p>In this project I made live 12 hr clock with help of html,css & js only..  </p>
+                <a href="Projects/clock.html">What is Time ?</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-2.jpeg" alt="Basic Game">
+            <div class="content">
+                <h3>project 02</h3>
+                <p>In this project I make very basic game with HTML & Javascript</p>
+                <a href="Projects/game.html">Play Game</a>
+            </div>
+        </div>
+       
+        <div class="box">
+            <img src="images/img-3.jpg" alt="Database Project">
+            <div class="content">
+                <h3>project 03</h3>
+                <p>Currently, I am working on this project ,it will be uploaded as soon as possible.</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-4.jpg" alt="Environmental Project">
+            <div class="content">
+                <h3>project 04</h3>
+                <p>In this project we talking about deep water horizon explosion </p> 
+                <a href="#">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-5.jpg" alt="Project 5">
+            <div class="content">
+                <h3>project 05</h3>
+                <p>I edited a Youtube  video</p>
+                <a href="https://youtu.be/4aJ_1PETCeE">Watch Video</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img-6.jpg" alt="project 6">
+            <div class="content">
+                <h3>project 06</h3>
+                <p>This is My upcoming 2nd yr project..</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#" class="btn"> load more <i class="fas fa-redo"></i> </a>
+    
+</section>
+
+<script>
+    var icon=document.getElementById("icon");
+ 
+    icon.onclick=function()
+    {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+            icon.src="images/sun.png";
+        }
+            else
+            {
+             icon.src="images/moon.png";  
+            }
+        
+    }
+ 
+ </script>
+<!-- portfolio section ends -->
+
+</body>
+</html>

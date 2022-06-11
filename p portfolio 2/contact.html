@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="home.html"> <i class="fas fa-home"></i> <span>Home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>About</span> </a>
+    <a href="Projects.html"> <i class="fas fa-briefcase"></i> <span>Projects</span> </a>
+    <a href="blogs.html"> <i class="fas fa-blog"></i> <span>Blogs</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>Contact</span> </a>
+    <img src="images/moon.png" id="icon">
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+<h1 class="heading"> contact <span>me</span> </h1>
+
+<div class="row">
+
+    <div class="info-container">
+
+        <h1>get in touch</h1>
+
+        <p></p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-map"></i>
+                <div class="info">
+                    <h3>Address :</h3>
+                    <a href="#"><p>Ahmedabad, india - 380008</p></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29382.75771871012!2d72.58687003091534!3d22.992737037948068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c2e335ed6b%3A0xd19a77c6688f5c9b!2sManinagar%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1652828202193!5m2!1sen!2sin" width="auto" height="auto style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <h3>Email :</h3>
+                   <a href="mailto:shahmeetjayendrakumar@gmail.com"> <p>shahmeetjayendrakumar@gmail.com</p></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <div class="info">
+                    <h3>Number :</h3>
+                    <a href="tel:+91 8140985275"><p>+91 8140985275</p></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="https://www.linkedin.com/in/meet-shah-330a46219" class="fab fa-linkedin"></a>
+            <a href="https://www.hackerrank.com/21ceuos086" class="fab fa-hackerrank"></a>
+            <a href="https://twitter.com/meetshahj?t=DbAavLiSI8B3NGLA0srGjQ&s=08" class="fab fa-twitter"></a>
+            <a href="https://github.com/settings/profile" class="fab fa-github"></a>
+            </div>
+
+    </div>
+
+    <form action="">
+        <div class="form-group">
+        <div class="inputBox">
+            <input type="text" placeholder="Your Name">
+            <input type="number" placeholder="Your  Roll number">
+        </div>
+        <div class="form-group">
+        <div class="inputBox">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Your Subject">
+        </div>
+
+        <textarea name="" placeholder="Your message" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Send message" class="btn">
+
+    </form>
+
+</div>
+
+</section>
+
+<script>
+    var icon=document.getElementById("icon");
+ 
+    icon.onclick=function()
+    {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+            icon.src="images/sun.png";
+        }
+            else
+            {
+             icon.src="images/moon.png";  
+            }
+        
+    }
+ 
+ </script>
+<!-- contact section ends -->
+
+</body>
+</html>

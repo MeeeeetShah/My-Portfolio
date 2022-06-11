@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="home.html"> <i class="fas fa-home"></i> <span>Home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>About</span> </a>
+    <a href="Projects.html"> <i class="fas fa-briefcase"></i> <span>Projects</span> </a>
+    <a href="blogs.html"> <i class="fas fa-blog"></i> <span>Blogs</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>Contact </span> </a>
+    <img src="images/moon.png" id="icon">
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- about section starts  -->
+
+<section class="about">
+
+    <h1 class="heading"> about <span>me</span> </h1>
+
+    <div class="row">
+
+        <div class="info-container">
+
+            <h1>personal info</h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3> <span>Name : </span> Meet Shah </h3>
+                    <h3> <span>Age : </span> 19 </h3>
+                    <h3> <span>Email : </span> shahmeetjayendrakumar@gmail.com </h3>
+                    <h3> <span>address : </span> Ahmedabad, India - 380008 </h3>
+                </div>
+    
+                <div class="box">
+                    <h3> <span>Freelance : </span> Available </h3>
+                    <h3> <span>Skills : </span> Front-end Web Dvelopement,Video Editing,Programming Solving </h3>
+                    <h3> <span>Language : </span> Hindi, English,Gujarati </h3>
+                </div>
+
+            </div>
+
+            <a href="https://drive.google.com/file/d/1aw_aEbDbqn0fcMho-BVAJJW4Daxslbv2/view?usp=drivesdk" class="btn"> download CV <i class="fas fa-download"></i> </a>
+
+        </div>
+        <h1 class="heading"> <span>my</span> achivements </h1>
+        <div class="count-container">
+
+            <div class="box">
+                <h3>03+</h3>
+                <p>Month of Experience of HTML,CSS</p>
+            </div>
+
+            <div class="box">
+                <h3>95+</h3>
+                <p>% in 12ᵗʰ (PCM)</p>
+            </div>
+
+            <div class="box">
+                <h3>90+</h3>
+                <p>% in 10ᵗʰ</p>
+            </div>
+
+            <div class="box">
+                <h3>10+</h3>
+                <p>Awards won</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- skills section starts  -->
+
+<section class="skills">
+
+    <h1 class="heading"> <span>My</span> Skills </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/icon-1.png">
+            <h3>html</h3>
+        </div>
+        <div class="box">
+            <img src="images/icon-2.png">
+            <h3>css</h3>
+        </div>
+        <div class="box">
+            <img src="images/icon-3.png">
+            <h3>javascript</h3>
+        </div>
+        <div class="box">
+            <img src="images/PHP_logo.png">
+            <h3>php</h3>
+        </div>
+        <div class="box">
+            <img src="images/c-plus-plus-program-logo.png">
+            <h3>C++</h3>
+        </div>
+        <div class="box">
+            <img src="images/PhpMyAdmin_logo.png">
+            <h3>phpMyadmin</h3>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- skills section ends -->
+
+<!-- education section starts  -->
+
+<section class="education">
+
+    <h1 class="heading"> <span>my</span> education </h1>
+
+    <div class="box-container">
+
+       
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2018 - 2019</span>
+            <h3>Complete 10ᵗʰ</h3>
+            <p> I completed 10th in 2019 with good marks from my <a href="https://g.co/kgs/QsMjCq">Shri Sardar Patel & Swami Vivekanand High School</a></p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2020 - 2021</span>
+            <h3>Complete 12ᵗʰ</h3>
+            <p> I completed  12ᵗʰ from GSEB board..</p>
+            
+        </div>
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2021 - 2025</span>
+            <h3>Btech- Computer Science </h3>
+            <p> I am currently pursuing my B-Tech degree from <a href="http://www.ddu.ac.in/">Dharmsingh Desai University</a></p>
+        </div>
+    </div>
+
+</section>
+<script>
+    var icon=document.getElementById("icon");
+ 
+    icon.onclick=function()
+    {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+            icon.src="images/sun.png";
+        }
+            else
+            {
+             icon.src="images/moon.png";  
+            }
+        
+    }
+ 
+ </script>
+<!-- education section ends -->
+
+</body>
+</html>
